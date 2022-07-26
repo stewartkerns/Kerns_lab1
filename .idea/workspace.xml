@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8780014f-c14e-4ff1-b0e8-6d91c8a4ef00" name="Changes" comment="Method for looping as long as the user likes created">
+    <list default="true" id="8780014f-c14e-4ff1-b0e8-6d91c8a4ef00" name="Changes" comment="Added method for summing columns">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Kerns_lab1/TwoDimArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kerns_lab1/TwoDimArray.java" afterDir="false" />
     </list>
@@ -72,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658723410180</updated>
-      <workItem from="1658723413008" duration="10583000" />
+      <workItem from="1658723413008" duration="11603000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1658728137139</created>
@@ -95,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658815513858</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added method for summing columns">
+      <created>1658816591257</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1658816591257</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +124,7 @@
     <MESSAGE value="Main method created" />
     <MESSAGE value="Method for building array created, sum rows started." />
     <MESSAGE value="Method for looping as long as the user likes created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Method for looping as long as the user likes created" />
+    <MESSAGE value="Added method for summing columns" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added method for summing columns" />
   </component>
 </project>

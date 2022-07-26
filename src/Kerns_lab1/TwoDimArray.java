@@ -42,15 +42,30 @@ public class TwoDimArray {
 
     public static int sumCol(int[][] arr, int col){
         int sumColArr = 0;
-        for (int j = 0; j < arr.length; j++){
-            sumColArr += arr[col][j];
+        for (int i = 0; i < arr.length; i++){
+            sumColArr += arr[i][col];
         }
         return sumColArr;
     }
+
+    public static int sumDiag1(int[][] arr){
+        int sumDiagArr = 0;
+        for (int i = 0; i < arr.length; i++){
+            sumDiagArr += arr[i][i];
+        }
+        return sumDiagArr;
+    }
+
+    public static int sumDiag2(int[][] arr){
+        int sumDiagArr = 0;
+        for (int i = 0; i < arr.length; i++){
+            sumDiagArr += arr[arr.length - i - 1][i];
+        }
+        return sumDiagArr;
+    }
     public static char continuePrgrm(Scanner keyboardIn){
         System.out.print("Would you like to run the program again? (Y/N): ");
-        char playAgain = keyboardIn.nextLine().toUpperCase().charAt(0);
-        return playAgain;
+        return keyboardIn.nextLine().toUpperCase().charAt(0);
     }
 
 }
