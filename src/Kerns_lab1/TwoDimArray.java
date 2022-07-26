@@ -32,13 +32,21 @@ public class TwoDimArray {
         }
         return array;
     }
-//    public static int sumRows(int[] arr, int size){
-//        int sumRowsArr = 0;
-//        for (int i = 0; i < size; i++){
-//            sumRowsArr += arr[i];
-//        }
-//        return sumRowsArr;
-//    }
+    public static int sumRows(int[] arr, int size){
+        int sumRowsArr = 0;
+        for (int i = 0; i < size; i++){
+            sumRowsArr += arr[i];
+        }
+        return sumRowsArr;
+    }
+
+    public static int sumCol(int[][] arr, int col){
+        int sumColArr = 0;
+        for (int j = 0; j < arr.length; j++){
+            sumColArr += arr[col][j];
+        }
+        return sumColArr;
+    }
     public static char continuePrgrm(Scanner keyboardIn){
         System.out.print("Would you like to run the program again? (Y/N): ");
         char playAgain = keyboardIn.nextLine().toUpperCase().charAt(0);
