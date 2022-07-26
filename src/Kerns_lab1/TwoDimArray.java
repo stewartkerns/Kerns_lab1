@@ -13,6 +13,7 @@ public class TwoDimArray {
             //consume the leftover \n
             keyboardIn.nextLine();
             int[][] randomArray = createArray(size);
+            printArr(randomArray, size);
 
             userCont = continuePrgrm(keyboardIn);
         } while(userCont == 'Y');
@@ -66,6 +67,21 @@ public class TwoDimArray {
     public static char continuePrgrm(Scanner keyboardIn){
         System.out.print("Would you like to run the program again? (Y/N): ");
         return keyboardIn.nextLine().toUpperCase().charAt(0);
+    }
+
+    public static void printArr(int[][] arr, int size){
+        for (int i = 0; i < size; i++){
+            for (int j = 0; j < size; j++){
+                System.out.print("\t" + arr[i][j]);
+            }
+            System.out.println("\t=\t" + sumRows(arr[i], size));
+        }
+        System.out.print(sumDiag2(arr));
+        for(int i = 0; i < size; i++){
+            System.out.print("\t" + sumCol(arr, i));
+        }
+        System.out.print("\t\t" + sumDiag1(arr));
+        System.out.println();
     }
 
 }
