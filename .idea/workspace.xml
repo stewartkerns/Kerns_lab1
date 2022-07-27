@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8780014f-c14e-4ff1-b0e8-6d91c8a4ef00" name="Changes" comment="Added methods to sum both of the diagonals">
+    <list default="true" id="8780014f-c14e-4ff1-b0e8-6d91c8a4ef00" name="Changes" comment="Added a print array method that outputs the printed array, column sums, row sums, and diagonal sums">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Kerns_lab1/TwoDimArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kerns_lab1/TwoDimArray.java" afterDir="false" />
     </list>
@@ -41,7 +41,8 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode"
   }
 }]]></component>
   <component name="RunManager">
@@ -72,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658723410180</updated>
-      <workItem from="1658723413008" duration="14520000" />
+      <workItem from="1658723413008" duration="20336000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1658728137139</created>
@@ -116,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658818243219</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added a print array method that outputs the printed array, column sums, row sums, and diagonal sums">
+      <created>1658863919887</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1658863919887</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +148,7 @@
     <MESSAGE value="Method for looping as long as the user likes created" />
     <MESSAGE value="Added method for summing columns" />
     <MESSAGE value="Added methods to sum both of the diagonals" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added methods to sum both of the diagonals" />
+    <MESSAGE value="Added a print array method that outputs the printed array, column sums, row sums, and diagonal sums" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a print array method that outputs the printed array, column sums, row sums, and diagonal sums" />
   </component>
 </project>
