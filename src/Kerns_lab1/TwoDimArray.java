@@ -20,6 +20,7 @@ public class TwoDimArray {
      */
     public static void main(String[] args){
         Scanner keyboardIn = new Scanner(System.in);
+        welcome();      //print the welcome message
         //Provide the do while loop to allow the user to repeat the program
         do {
             //ask the user how large of an array to make
@@ -34,6 +35,7 @@ public class TwoDimArray {
             printArr(randomArray, size);
 
         } while(continuePrgrm(keyboardIn) == 'Y');
+        goodbye();      //print the goodbye message
     }
 
     /** This method creates the array of random numbers based off of the size
@@ -78,48 +80,108 @@ public class TwoDimArray {
         return sumRowsArr;      //return the sum of the array
     }
 
-
+    /** This method sums a column that is input from an array that is input
+     *
+     * @param arr the 2d array to be used to sum from
+     * @param col which column of the array to sum
+     * @param size the size of the array input by the user
+     * @return the sum of the column requested
+     */
     public static int sumCol(int[][] arr, int col, int size){
+        //create an int to hold the sum of the column
         int sumColArr = 0;
+        //sum the column requested
         for (int i = 0; i < size; i++){
             sumColArr += arr[i][col];
         }
-        return sumColArr;
+        return sumColArr;       //return the summed column
     }
 
+    /** This method sums the main diagonal from top-left to bottom-right
+     *
+     * @param arr the array that the diagonal will be summed from
+     * @param size the size of the array requested by the user
+     * @return the summed diagonal
+     */
     public static int sumDiag1(int[][] arr, int size){
+        //create an int to hold the sum of the diagonal
         int sumDiagArr = 0;
+        //use a for loop to sump the diagonal
         for (int i = 0; i < size; i++){
             sumDiagArr += arr[i][i];
         }
-        return sumDiagArr;
+        return sumDiagArr;  //return the summed diagonal
     }
 
+    /** This method sums the main diagonal from bottom-left to top-right
+     *
+     * @param arr the array that the diagonal will be summed from
+     * @param size the size of the array requested by the user
+     * @return the summed diagonal
+     */
     public static int sumDiag2(int[][] arr, int size){
+        //create an int to hold the sum of the diagonal
         int sumDiagArr = 0;
+        //use a for loop to sum the diagonal
         for (int i = 0; i < size; i++){
             sumDiagArr += arr[size - i - 1][i];
         }
-        return sumDiagArr;
+        return sumDiagArr;      //return the sum of the diagonal
     }
+
+    /**This method asks the user if they want to run the program again and then
+     * returns the letter that they selected
+     *
+     * @param keyboardIn a scanner object for reading input from the terminal
+     * @return the first letter of the user input
+     */
     public static char continuePrgrm(Scanner keyboardIn){
-        System.out.print("Would you like to run the program again? (Y/N): ");
+        //prompt the user to run the program again or not
+        System.out.print("\n\nWould you like to run the program again?(Y/N): ");
+        //return the first letter of their answer
         return keyboardIn.nextLine().toUpperCase().charAt(0);
     }
 
+    /**This method prints out the entire array, the sum of each row, column, and
+     * main diagonal
+     *
+     * @param arr the array that will be used and printed
+     * @param size the size input by the user
+     */
     public static void printArr(int[][] arr, int size){
+        //create a nested for loop to print out the array itself
         for (int i = 0; i < size; i++){
             for (int j = 0; j < size; j++){
                 System.out.print("\t" + arr[i][j]);
             }
+            // print out the sum after each row
             System.out.println("\t=\t" + sumRows(arr[i], size));
         }
+        //print out the bottom-left to top-right diagonal sum
         System.out.print(sumDiag2(arr, size));
+        //print out each of the column sums
         for(int i = 0; i < size; i++){
             System.out.print("\t" + sumCol(arr, i, size));
         }
+        //print the top-left to bottom-right diagonal sum
         System.out.print("\t\t" + sumDiag1(arr, size));
-        System.out.println();
     }
-
+    /**This method prints a welcome message to the user
+     *
+     */
+    public static void welcome(){
+        //print the welcome message
+        System.out.println("Welcome to TwoDimArray!\nThis program asks for " +
+                "the array size of a 2d square array of integers, then\n" +
+                "creates the square array, fills it with random numbers, " +
+                "then prints it out along\nwith sums in both directions and " +
+                "along the diagonals.\n");
+    }
+    /**This method prints a goodbye message to the user
+     *
+     */
+    public static void goodbye(){
+        //print the goodbye message
+        System.out.println("\nThanks for using TwoDimArray!");
+    }
 }

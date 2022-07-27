@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8780014f-c14e-4ff1-b0e8-6d91c8a4ef00" name="Changes" comment="Added a print array method that outputs the printed array, column sums, row sums, and diagonal sums">
+    <list default="true" id="8780014f-c14e-4ff1-b0e8-6d91c8a4ef00" name="Changes" comment="Changed the length methods to size and removed areas that were redundant, started commenting methods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Kerns_lab1/TwoDimArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kerns_lab1/TwoDimArray.java" afterDir="false" />
     </list>
@@ -73,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658723410180</updated>
-      <workItem from="1658723413008" duration="20336000" />
+      <workItem from="1658723413008" duration="23809000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1658728137139</created>
@@ -124,7 +124,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658863919887</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Changed the length methods to size and removed areas that were redundant, started commenting methods">
+      <created>1658891781601</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1658891781601</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Changed the length methods to size and removed areas that were redundant, started commenting methods">
+      <created>1658891802242</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1658891802242</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +163,7 @@
     <MESSAGE value="Added method for summing columns" />
     <MESSAGE value="Added methods to sum both of the diagonals" />
     <MESSAGE value="Added a print array method that outputs the printed array, column sums, row sums, and diagonal sums" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a print array method that outputs the printed array, column sums, row sums, and diagonal sums" />
+    <MESSAGE value="Changed the length methods to size and removed areas that were redundant, started commenting methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the length methods to size and removed areas that were redundant, started commenting methods" />
   </component>
 </project>
