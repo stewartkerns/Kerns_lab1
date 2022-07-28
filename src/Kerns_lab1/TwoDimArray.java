@@ -24,9 +24,7 @@ public class TwoDimArray {
         //Provide the do while loop to allow the user to repeat the program
         do {
             //ask the user how large of an array to make
-            System.out.print("Please input the size of array you would like " +
-                    "(between 1 and 10): ");
-            int size = keyboardIn.nextInt();
+            int size = sizeInput(keyboardIn);
             //consume the leftover \n
             keyboardIn.nextLine();
 
@@ -38,6 +36,24 @@ public class TwoDimArray {
         } while(continuePrgrm(keyboardIn) == 'Y');
         goodbye();      //print the goodbye message
         keyboardIn.close();     //close the Scanner object
+    }
+
+    /**This method asks the user for the size of the array they would like and
+     * continues to ask until they enter a valid number
+     *
+     * @param keyboardIn A Scanner object for taking in keyboard input
+     * @return the size of the array in the correct bounds
+     */
+    public static int sizeInput(Scanner keyboardIn){
+        //declare the integer size to be returned
+        int size;
+        //ask the user for the size until they enter a valid number
+        do {
+            System.out.print("\nPlease input the size of array you would like" +
+                    "(between 1 and 10): ");
+            size = keyboardIn.nextInt();
+        } while(size < 1 || size > 10);
+        return size;        //return the size
     }
 
     /** This method creates the array of random numbers based off of the size
@@ -153,20 +169,21 @@ public class TwoDimArray {
     public static void printArr(int[][] arr, int size){
         //create a nested for loop to print out the array itself
         for (int i = 0; i < size; i++){
+            System.out.print("     ");
             for (int j = 0; j < size; j++){
-               System.out.printf("\t%-3d", arr[i][j]);
+               System.out.printf("%5d", arr[i][j]);
             }
             // print out the sum after each row
-            System.out.printf("\t=\t%-3d\n", sumRows(arr[i], size));
+            System.out.printf("\t=\t%3d\n", sumRows(arr[i], size));
         }
         //print out the bottom-left to top-right diagonal sum
-        System.out.printf("%-3d", sumDiag2(arr, size));
+        System.out.printf("%5d", sumDiag2(arr, size));
         //print out each of the column sums
         for(int i = 0; i < size; i++){
-            System.out.printf("\t%-3d", sumCol(arr, i, size));
+            System.out.printf("%5d", sumCol(arr, i, size));
         }
         //print the top-left to bottom-right diagonal sum
-        System.out.printf("\t\t%-3d", sumDiag1(arr, size));
+        System.out.printf("\t\t%3d", sumDiag1(arr, size));
     }
 
     /**This method prints a welcome message to the user
@@ -178,7 +195,7 @@ public class TwoDimArray {
                 "the array size of a 2d square array of integers, then\n" +
                 "creates the square array, fills it with random numbers, " +
                 "then prints it out along\nwith sums in both directions and " +
-                "along the diagonals.\n");
+                "along the diagonals.");
     }
 
     /**This method prints a goodbye message to the user
