@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8780014f-c14e-4ff1-b0e8-6d91c8a4ef00" name="Changes" comment="Changed the length methods to size and removed areas that were redundant, started commenting methods">
+    <list default="true" id="8780014f-c14e-4ff1-b0e8-6d91c8a4ef00" name="Changes" comment="Added a welcome and goodbye message method, finished commenting the program">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Kerns_lab1/TwoDimArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kerns_lab1/TwoDimArray.java" afterDir="false" />
     </list>
@@ -73,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658723410180</updated>
-      <workItem from="1658723413008" duration="23809000" />
+      <workItem from="1658723413008" duration="29905000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1658728137139</created>
@@ -138,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658891802242</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added a welcome and goodbye message method, finished commenting the program">
+      <created>1658897393229</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1658897393229</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +171,7 @@
     <MESSAGE value="Added methods to sum both of the diagonals" />
     <MESSAGE value="Added a print array method that outputs the printed array, column sums, row sums, and diagonal sums" />
     <MESSAGE value="Changed the length methods to size and removed areas that were redundant, started commenting methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed the length methods to size and removed areas that were redundant, started commenting methods" />
+    <MESSAGE value="Added a welcome and goodbye message method, finished commenting the program" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a welcome and goodbye message method, finished commenting the program" />
   </component>
 </project>
